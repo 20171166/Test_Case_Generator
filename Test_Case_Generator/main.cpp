@@ -8,8 +8,8 @@ int main() {
     ofstream writeF;
     writeF.open("/Users/laurent01/Desktop/feature.txt",ios::in|ios::app);
     if(writeF.is_open()){
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 25; j++){
+        for(int i = 0; i < 25; i++){
+            for(int j = 0; j < 3; j++){
                     stringstream stream;
                     stream << dec << (i + 1) * (j + 1);
                     string result(stream.str());
@@ -28,7 +28,7 @@ int main() {
             for(int j = 0; j < 9; j++){
                 for(int k = 0; k < 4; k++){
                     stringstream stream;
-                    stream << dec << (k+1);
+                    stream << dec << (1);
                     string result(stream.str());
                     writeK << result << "\n";
                 }
